@@ -37,7 +37,6 @@ CodebaseLLM is an automated codebase analysis tool that leverages Large Language
 - **Robust Parsing:** Cleans and parses LLM output to handle common JSON formatting issues.
 - **Logging:** All LLM responses and errors are logged for transparency and debugging.
 - **Extensibility:** Modular class design (RepoCloner, CodeReader, LLMIntegration, KnowledgeExtractor) for easy extension and maintenance.
-- **Suppressing Unwanted Logs:** FAISS GPU warnings are filtered out for a clean user experience.
 
 ---
 
@@ -70,18 +69,26 @@ CodebaseLLM is an automated codebase analysis tool that leverages Large Language
 - LLM output is post-processed for JSON safety, but rare edge cases may still require manual review.
 - The tool is optimized for Java and Python codebases but can be extended for others.
 - Code complexity analysis is basic and LLM-driven, not static analysis.
-- The tool does not require or use GPU FAISS; GPU warnings are suppressed.
 
 ---
 
 ## Setup & Usage
 
-### 1. **Install Requirements**
+### 1. **Create and Activate a Virtual Environment**
+```sh
+python -m venv codeenv
+# On Windows:
+codeenv\Scripts\activate
+# On macOS/Linux:
+source codeenv/bin/activate
+```
+
+### 2. **Install Requirements**
 ```sh
 pip install -r requirements.txt
 ```
 
-### 2. **Configure Environment**
+### 3. **Configure Environment**
 Create a `.env` file in the project root with the following variables:
 ```
 REPO_URL=<your-repo-url>
@@ -89,14 +96,14 @@ TARGET_DIR=./repos/<your-target-folder>
 OPENAI_API_KEY=<your-openai-api-key>
 ```
 
-### 3. **Run the Tool**
+### 4. **Run the Tool**
 ```sh
 python main.py
 ```
 
 - The tool will clone the repository, analyze the codebase, and output results to `output/extracted_knowledge.json`.
 
-### 4. **Review Output**
+### 5. **Review Output**
 - Open `output/extracted_knowledge.json` to view the structured knowledge extracted from your codebase.
 
 ---
