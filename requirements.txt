@@ -1,0 +1,9 @@
+langchain
+python-dotenv
+langchain_community
+gitpython
+faiss-cpu
+langchain-openai
+pydantic
+lizard
+javalang
