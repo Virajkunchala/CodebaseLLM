@@ -1,0 +1,2845 @@
+{
+  "project_info": {
+    "readme_summary": "This project is a web app front end for the Sakila database, modeling data associated with a film rental business. It provides data for visitors, customers, and owners with different levels of access.",
+    "main_features": [
+      "Spring Boot, Thymeleaf, My SQL, JUnit, Scrum Framework within Agile",
+      "Allows browsing for films and actors, searching by specific criteria, renting films, updating film information, and deleting films",
+      "Different pages for landing, browsing films, browsing actors, login, customer information, owner information, and sign out"
+    ],
+    "usage": "Users can access different levels of information and functionality based on their role as a visitor, customer, or owner. They can browse films and actors, search for specific items, rent films, view customer information, update film details, and perform admin actions."
+  },
+  "overview": [
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\.mvn\\wrapper\\MavenWrapperDownloader.java",
+      "chunk_index": 0,
+      "overview": "The MavenWrapperDownloader class is responsible for downloading the Maven wrapper JAR file. It handles the logic of fetching the wrapper JAR from a specified URL or a default URL."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\.mvn\\wrapper\\MavenWrapperDownloader.java",
+      "chunk_index": 1,
+      "overview": "This code chunk reads a maven-wrapper.properties file, checks for a custom wrapperUrl parameter, and sets a default download URL if not found."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\.mvn\\wrapper\\MavenWrapperDownloader.java",
+      "chunk_index": 2,
+      "overview": "This code chunk is responsible for downloading a file from a given URL and saving it to a specified destination. It also handles authentication if provided through environment variables."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\SakilaProjectApplication.java",
+      "chunk_index": 3,
+      "overview": "This code chunk represents the main application class for the Sakila Project. It uses Spring Boot to run the application."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\ActorController.java",
+      "chunk_index": 4,
+      "overview": "This code chunk defines an ActorController class that handles requests related to actors in a Sakila project. It uses ActorService and FilmService to retrieve actor data."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\ActorController.java",
+      "chunk_index": 5,
+      "overview": "This code chunk defines methods to retrieve and display details of actors and their associated films."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\CategoryController.java",
+      "chunk_index": 6,
+      "overview": "The CategoryController class is responsible for handling requests related to categories in the Sakila project. It interacts with FilmService and CategoryService to retrieve and display category information."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\CustomerController.java",
+      "chunk_index": 7,
+      "overview": "This code chunk defines a controller class for managing customers in a Sakila project. It handles interactions related to customers, rentals, inventory, and films."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\CustomerController.java",
+      "chunk_index": 8,
+      "overview": "This code chunk contains two methods related to customer management in a web application. The 'currentUser' method retrieves the current user's information and their orders, while the 'getCustomers' method fetches a list of customers based on filters."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\CustomerController.java",
+      "chunk_index": 9,
+      "overview": "This code chunk contains methods related to handling customer data in an owner's context. It includes adding customers to a model, retrieving all customers, and displaying a customer's rental history."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\FilmController.java",
+      "chunk_index": 10,
+      "overview": "The FilmController class is responsible for handling requests related to films, inventories, rentals, and customers in the Sakila project."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\FilmController.java",
+      "chunk_index": 11,
+      "overview": "This code chunk defines two methods for handling film-related requests. The 'getFilms' method retrieves a list of films based on a filter, while the 'getFilmDetails' method fetches details of a specific film."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\FilmController.java",
+      "chunk_index": 12,
+      "overview": "This code chunk contains two methods related to film rental and film management. The first method handles renting a film by a customer, while the second method retrieves film details for an owner."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\FilmController.java",
+      "chunk_index": 13,
+      "overview": "This code chunk defines methods for editing, deleting, and finding films by ID in a film management system."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\MainController.java",
+      "chunk_index": 14,
+      "overview": "This code chunk defines a controller class for handling requests related to the main functionality of a Sakila project."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\StaffController.java",
+      "chunk_index": 15,
+      "overview": "The StaffController class is responsible for handling requests related to staff members, customers, and inventory in the Sakila project."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Actor.java",
+      "chunk_index": 16,
+      "overview": "The Actor class represents an entity in the Sakila project, storing information about actors in a film database."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Category.java",
+      "chunk_index": 17,
+      "overview": "The Category class represents a category entity in the Sakila project. It contains properties for category ID, name, and last update timestamp."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Customer.java",
+      "chunk_index": 18,
+      "overview": "This code defines a Customer entity class with properties representing customer details such as ID, name, email, and timestamps. It uses JPA annotations for mapping to a database table."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Customer.java",
+      "chunk_index": 19,
+      "overview": "This code chunk defines a Customer class with methods for setting the last update timestamp, checking equality with another object, and generating a hash code."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Film.java",
+      "chunk_index": 20,
+      "overview": "The Film class represents a film entity in the Sakila project. It contains properties such as filmId, title, description, releaseYear, rentalDuration, rentalRate, length, replacementCost, rating, specialFeatures, and lastUpdate."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Film.java",
+      "chunk_index": 21,
+      "overview": "This code chunk defines a class representing a Film entity with various properties like length, replacement cost, rating, special features, and last update. It also includes methods for setting and getting these properties, as well as an equals method for comparing Film objects."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Film.java",
+      "chunk_index": 22,
+      "overview": "This code chunk defines the hashCode method for a class, likely related to films in a video rental system."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\FilmActor.java",
+      "chunk_index": 23,
+      "overview": "The FilmActor class represents the relationship between actors and films in the Sakila database. It contains information about the actor ID, film ID, and last update timestamp."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\FilmActorPK.java",
+      "chunk_index": 24,
+      "overview": "This code defines a primary key class for the FilmActor entity in the Sakila project. It represents the composite key made up of actorId and filmId."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\FilmCategory.java",
+      "chunk_index": 25,
+      "overview": "This code defines the entity class FilmCategory, which represents the relationship between films and categories in the Sakila database."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\FilmCategoryPK.java",
+      "chunk_index": 26,
+      "overview": "This code defines a class FilmCategoryPK that represents a composite primary key for a film category entity in a database."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\FilmText.java",
+      "chunk_index": 27,
+      "overview": "This code defines a Java entity class 'FilmText' that represents a film text entity in a database. It includes fields for film ID, title, and description, along with getter and setter methods."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Inventory.java",
+      "chunk_index": 28,
+      "overview": "The Inventory class represents an entity in the Sakila project's database, storing information about film inventory."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Order.java",
+      "chunk_index": 29,
+      "overview": "The Order class represents an order in the Sakila project, containing information about a customer, film, and rental associated with the order."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Rental.java",
+      "chunk_index": 30,
+      "overview": "The Rental class represents a rental entity in the Sakila project. It contains properties related to a rental transaction such as rental date, inventory ID, customer ID, return date, staff ID, and last update timestamp."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Rental.java",
+      "chunk_index": 31,
+      "overview": "This code chunk defines a Rental class with methods for setting the last update timestamp, checking equality with another object, and generating a hash code."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Staff.java",
+      "chunk_index": 32,
+      "overview": "The Staff class represents staff members in the Sakila project. It contains attributes such as staff ID, name, picture, email, active status, username, password, and last update timestamp."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Staff.java",
+      "chunk_index": 33,
+      "overview": "This code chunk defines a Staff class with methods for setting and getting password, last update timestamp, and implementing equals and hashCode methods."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\ActorRepository.java",
+      "chunk_index": 34,
+      "overview": "This code chunk defines an interface for interacting with the Actor entity in the Sakila project database. It extends JpaRepository to provide basic CRUD operations for Actor entities."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\CategoryRepository.java",
+      "chunk_index": 35,
+      "overview": "This code chunk defines a repository interface for managing Category entities in the Sakila project."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\CustomerRepository.java",
+      "chunk_index": 36,
+      "overview": "This code chunk defines a repository interface for managing Customer entities in a Sakila project. It extends JpaRepository to provide CRUD operations for Customer entities."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\FilmRepository.java",
+      "chunk_index": 37,
+      "overview": "This code chunk defines a FilmRepository interface that extends JpaRepository for managing Film entities in a Sakila project. It includes methods for retrieving film data based on various criteria such as availability, category, actor, and title."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\InventoryRepository.java",
+      "chunk_index": 38,
+      "overview": "This code chunk defines an interface for interacting with the Inventory entity in the Sakila project database. It extends JpaRepository and includes methods for retrieving, deleting, and counting inventory items."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\RentalRepository.java",
+      "chunk_index": 39,
+      "overview": "This code chunk defines a repository interface for handling Rental entities in the Sakila project. It extends JpaRepository and includes methods for retrieving rentals by rental ID and customer ID."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\StaffRepository.java",
+      "chunk_index": 40,
+      "overview": "This code chunk defines a Spring Data JPA repository interface for the Staff entity in the Sakila project. It includes a method to retrieve staff by username."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\FailureHandler.java",
+      "chunk_index": 41,
+      "overview": "This code chunk defines a FailureHandler class that implements the AccessDeniedHandler interface. It handles access denied exceptions by redirecting the user to an error page."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\MvcConfig.java",
+      "chunk_index": 42,
+      "overview": "This code chunk defines a configuration class MvcConfig that implements WebMvcConfigurer interface. It sets up view controllers for specific URLs in a Spring MVC web application."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\SuccessHandler.java",
+      "chunk_index": 43,
+      "overview": "This code chunk defines a SuccessHandler class that implements the AuthenticationSuccessHandler interface. It handles the redirection of users based on their roles after successful authentication."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\UserDetailsServiceImpl.java",
+      "chunk_index": 44,
+      "overview": "This code chunk defines a UserDetailsServiceImpl class that implements the UserDetailsService interface. It is responsible for loading user details based on the provided username, checking if the user is a customer or staff member, and assigning roles accordingly."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\WebSecurityConfig.java",
+      "chunk_index": 45,
+      "overview": "This code chunk is part of a Spring Boot project for securing a web application. It configures web security settings using Spring Security."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\WebSecurityConfig.java",
+      "chunk_index": 46,
+      "overview": "This code chunk defines security configurations for a web application using Spring Security. It specifies which URL paths require authentication and which do not, sets up custom login and error pages, and configures authentication providers."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\ActorService.java",
+      "chunk_index": 47,
+      "overview": "The ActorService class provides methods to interact with actor data in the Sakila project."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\CategoryService.java",
+      "chunk_index": 48,
+      "overview": "The CategoryService class provides methods to interact with Category entities in the Sakila project."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\CustomerService.java",
+      "chunk_index": 49,
+      "overview": "This code defines a service class for managing customer data in a Sakila project. It interacts with a CustomerRepository to perform CRUD operations on customer entities."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\FilmService.java",
+      "chunk_index": 50,
+      "overview": "This code defines a FilmService class that provides various methods for interacting with film entities in a Sakila project. It serves as a bridge between the application's business logic and the data access layer."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\InventoryService.java",
+      "chunk_index": 51,
+      "overview": "This code chunk defines a service class for managing inventory data in a Sakila project. It provides methods for retrieving, deleting, and counting inventory items."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\RentalService.java",
+      "chunk_index": 52,
+      "overview": "The RentalService class provides methods for retrieving rentals by customer ID and adding new rentals to the system."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\StaffService.java",
+      "chunk_index": 53,
+      "overview": "The StaffService class provides methods to interact with Staff entities in the Sakila project."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 54,
+      "overview": "This code chunk sets up mock tests for various controllers, services, and repositories in the Sakila project."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 55,
+      "overview": "The code chunk contains test methods for the CategoryController class, specifically testing various scenarios for finding actors by different criteria."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 56,
+      "overview": "The code chunk contains a series of test methods for testing different functionalities related to actors and films in a movie database system."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 57,
+      "overview": "This code chunk contains unit tests for various methods related to film and category objects. It tests functionalities like retrieving films by name, description, and ID, as well as retrieving categories by ID."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 58,
+      "overview": "The code chunk contains test methods for verifying the functionality of category, customer, and staff objects in a system. It involves setting attributes of these objects and mocking repository calls to test retrieval by ID."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 59,
+      "overview": "The code chunk includes unit tests for a FilmController and CategoryController classes, as well as testing the Staff class functionality."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 60,
+      "overview": "The code chunk contains test methods for different controllers in a film rental system. Each test initializes a controller with necessary services and asserts the result of a method call."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 61,
+      "overview": "The code chunk contains two test methods for testing inventory and rental functionalities in a film rental system."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 62,
+      "overview": "This code chunk contains unit tests for verifying the functionality of retrieving rental and category objects by their respective IDs and checking their attributes."
+    },
+    {
+      "type": "overview",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\SakilaProjectApplicationTests.java",
+      "chunk_index": 63,
+      "overview": "This code chunk contains test cases for the MainController class in the SakilaProject application. The tests verify the functionality of the home, account, and login methods in the MainController class."
+    }
+  ],
+  "methods": [
+    {
+      "type": "methods",
+      "name": "main",
+      "signature": "public static void main(String args[])",
+      "description": "The main method of the MavenWrapperDownloader class. It initiates the download process by taking the base directory as an argument and printing out the base directory path."
+    },
+    {
+      "type": "methods",
+      "name": "loadMavenWrapperProperties",
+      "signature": "private void loadMavenWrapperProperties(File mavenWrapperPropertyFile)",
+      "description": "Loads the maven-wrapper.properties file, reads the wrapperUrl parameter if present, and sets the download URL accordingly."
+    },
+    {
+      "type": "methods",
+      "name": "downloadFileFromURL",
+      "signature": "private static void downloadFileFromURL(String urlString, File destination) throws Exception",
+      "description": "Downloads a file from the provided URL and saves it to the specified destination. It also handles authentication if environment variables MVNW_USERNAME and MVNW_PASSWORD are set."
+    },
+    {
+      "type": "methods",
+      "name": "main",
+      "signature": "public static void main(String[] args)",
+      "description": "The main method that starts the Spring Boot application for the Sakila Project."
+    },
+    {
+      "type": "methods",
+      "name": "getActors",
+      "signature": "public String getActors(ModelMap modelMap, @RequestParam(value = \"firstName\", defaultValue = \"ALL ACTORS\") String firstNameFilter, @RequestParam(value = \"lastName\", defaultValue = \"ALL ACTORS\") String lastNameFilter)",
+      "description": "Handles GET requests for /actors endpoint. Retrieves a list of actors based on first name, last name, or both filters. Adds actors and all actors to the model map and returns the view name 'actors/actors'."
+    },
+    {
+      "type": "methods",
+      "name": "getActorFilmDetails",
+      "signature": "public String getActorFilmDetails(ModelMap modelMap, @RequestParam(value = \"id\") Integer id)",
+      "description": "Retrieves the full name of an actor and their associated films based on the provided actor ID, then adds them to the model map for display."
+    },
+    {
+      "type": "methods",
+      "name": "findActorById",
+      "signature": "public Actor findActorById(Integer id)",
+      "description": "Finds and returns an actor object by the provided ID."
+    },
+    {
+      "type": "methods",
+      "name": "getActorFullNameFromID",
+      "signature": "public String getActorFullNameFromID(Integer id)",
+      "description": "Retrieves the full name of an actor based on the provided actor ID."
+    },
+    {
+      "type": "methods",
+      "name": "getCategories",
+      "signature": "public String getCategories(ModelMap modelMap)",
+      "description": "Retrieves all categories from the CategoryService and adds them to the modelMap for display on the categories page."
+    },
+    {
+      "type": "methods",
+      "name": "getCategoryDetails",
+      "signature": "public String getCategoryDetails(ModelMap modelMap, @RequestParam(value = \"id\") Integer id)",
+      "description": "Retrieves category details and associated films by category ID from CategoryService and FilmService respectively. Adds them to the modelMap for display on the category details page."
+    },
+    {
+      "type": "methods",
+      "name": "getCategoryById",
+      "signature": "public Category getCategoryById(Integer id)",
+      "description": "Retrieves a specific category by ID from the CategoryService."
+    },
+    {
+      "type": "methods",
+      "name": "CustomerController",
+      "signature": "public CustomerController(CustomerService customerService, RentalService rentalService, InventoryService inventoryService, FilmService filmService)",
+      "description": "Constructor for CustomerController class that initializes the services for managing customers, rentals, inventory, and films."
+    },
+    {
+      "type": "methods",
+      "name": "currentUser",
+      "signature": "public String currentUser(ModelMap modelMap, HttpServletRequest request)",
+      "description": "Retrieves the current user's information, including their orders, and adds it to the model map for rendering on the customer view page."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomers",
+      "signature": "public String getCustomers(ModelMap modelMap, @RequestParam(value = \"firstName\", defaultValue = \"ALL CUSTOMERS\") String firstNameFilter, @RequestParam(value = \"lastName\", defaultValue = \"ALL CUSTOMERS\") String lastNameFilter)",
+      "description": "Fetches a list of customers based on optional first name and last name filters. The method then adds the filtered customers to the model map for display."
+    },
+    {
+      "type": "methods",
+      "name": "addAttribute",
+      "signature": "void addAttribute(String attributeName, Object attributeValue)",
+      "description": "Adds an attribute with the specified name and value to the model map."
+    },
+    {
+      "type": "methods",
+      "name": "showUsersRentalHistory",
+      "signature": "String showUsersRentalHistory(ModelMap modelMap, int id)",
+      "description": "Retrieves a customer by ID, fetches their rental history, creates order objects for each rental, and adds them to the model map for display."
+    },
+    {
+      "type": "methods",
+      "name": "handleFilmRequest",
+      "signature": "@GetMapping(\"/films/{filmId}\")\npublic String handleFilmRequest(@PathVariable int filmId, ModelMap model)",
+      "description": "Handles GET requests for retrieving film details by film ID. Retrieves film details from the database using FilmService and adds them to the model for rendering."
+    },
+    {
+      "type": "methods",
+      "name": "handleInventoryRequest",
+      "signature": "@GetMapping(\"/inventories/{inventoryId}\")\npublic String handleInventoryRequest(@PathVariable int inventoryId, ModelMap model)",
+      "description": "Handles GET requests for retrieving inventory details by inventory ID. Retrieves inventory details from the database using InventoryService and adds them to the model for rendering."
+    },
+    {
+      "type": "methods",
+      "name": "handleRentalRequest",
+      "signature": "@GetMapping(\"/rentals/{rentalId}\")\npublic String handleRentalRequest(@PathVariable int rentalId, ModelMap model)",
+      "description": "Handles GET requests for retrieving rental details by rental ID. Retrieves rental details from the database using RentalService and adds them to the model for rendering."
+    },
+    {
+      "type": "methods",
+      "name": "handleCustomerRequest",
+      "signature": "@GetMapping(\"/customers/{customerId}\")\npublic String handleCustomerRequest(@PathVariable int customerId, ModelMap model)",
+      "description": "Handles GET requests for retrieving customer details by customer ID. Retrieves customer details from the database using CustomerService and adds them to the model for rendering."
+    },
+    {
+      "type": "methods",
+      "name": "getFilms",
+      "signature": "public String getFilms(ModelMap modelMap, @RequestParam(value = \"title\", defaultValue = \"ALL FILMS\") String filter)",
+      "description": "Retrieves a list of films based on the provided filter. If the filter is 'ALL FILMS', all films are fetched; otherwise, films matching the filter are retrieved. The films are then added to the model map along with available and all films."
+    },
+    {
+      "type": "methods",
+      "name": "getFilmDetails",
+      "signature": "public String getFilmDetails(ModelMap modelMap, @RequestParam(value = \"id\") Integer id)",
+      "description": "Fetches details of a specific film identified by the provided ID. The film's availability status is determined by checking if it is present in the list of available films. The film details and availability status are added to the model map."
+    },
+    {
+      "type": "methods",
+      "name": "rentFilm",
+      "signature": "public String rentFilm(ModelMap modelMap, Principal principal, @PathVariable(\"filmid\") int filmid)",
+      "description": "Handles the process of renting a film by a customer. It retrieves the customer details, fetches all available inventory, finds the specified film, calculates the return date, and adds a rental entry. Finally, it updates the model map and redirects to the films page."
+    },
+    {
+      "type": "methods",
+      "name": "getFilmDetails",
+      "signature": "public String getFilmDetails(ModelMap modelMap, @RequestParam(value = \"title\", defaultValue = \"ALL FILMS\") String filter)",
+      "description": "Retrieves film details based on the specified filter (default is all films). It fetches the films, calculates the available film count for each film, and updates the model map with the necessary data before returning the manage-films page."
+    },
+    {
+      "type": "methods",
+      "name": "showEditProductPage",
+      "signature": "public ModelAndView showEditProductPage(@PathVariable(name = \"id\") int id)",
+      "description": "Displays the edit page for a specific film by retrieving the film details using the provided ID."
+    },
+    {
+      "type": "methods",
+      "name": "deleteProduct",
+      "signature": "public String deleteProduct(@PathVariable(name = \"id\") int id)",
+      "description": "Deletes a film with the specified ID and redirects to the film management page."
+    },
+    {
+      "type": "methods",
+      "name": "findFilmByID",
+      "signature": "public Film findFilmByID(Integer id)",
+      "description": "Finds and returns a film object by its ID using the film service."
+    },
+    {
+      "type": "methods",
+      "name": "home",
+      "signature": "public String home()",
+      "description": "Handles requests to the root URL '/' and returns the 'home' view."
+    },
+    {
+      "type": "methods",
+      "name": "login",
+      "signature": "public String login()",
+      "description": "Handles requests to the '/login' URL and returns the 'login' view."
+    },
+    {
+      "type": "methods",
+      "name": "account",
+      "signature": "public String account()",
+      "description": "Handles requests to the '/account' URL and returns the 'account' view."
+    },
+    {
+      "type": "methods",
+      "name": "currentUser",
+      "signature": "public String currentUser(ModelMap modelMap, HttpServletRequest request)",
+      "description": "Retrieves the current user's username from the request, fetches the staff member details, customer count, and inventory count using respective services, and adds them to the model map for rendering on the 'owner' page."
+    },
+    {
+      "type": "methods",
+      "name": "getActorId",
+      "signature": "public int getActorId()",
+      "description": "Returns the actor's ID."
+    },
+    {
+      "type": "methods",
+      "name": "setActorId",
+      "signature": "public void setActorId(int actorId)",
+      "description": "Sets the actor's ID."
+    },
+    {
+      "type": "methods",
+      "name": "getFirstName",
+      "signature": "public String getFirstName()",
+      "description": "Returns the actor's first name."
+    },
+    {
+      "type": "methods",
+      "name": "setFirstName",
+      "signature": "public void setFirstName(String firstName)",
+      "description": "Sets the actor's first name."
+    },
+    {
+      "type": "methods",
+      "name": "getLastName",
+      "signature": "public String getLastName()",
+      "description": "Returns the actor's last name."
+    },
+    {
+      "type": "methods",
+      "name": "setLastName",
+      "signature": "public void setLastName(String lastName)",
+      "description": "Sets the actor's last name."
+    },
+    {
+      "type": "methods",
+      "name": "getLastUpdate",
+      "signature": "public Timestamp getLastUpdate()",
+      "description": "Returns the timestamp of the last update for the actor."
+    },
+    {
+      "type": "methods",
+      "name": "setLastUpdate",
+      "signature": "public void setLastUpdate(Timestamp lastUpdate)",
+      "description": "Sets the timestamp of the last update for the actor."
+    },
+    {
+      "type": "methods",
+      "name": "equals",
+      "signature": "public boolean equals(Object o)",
+      "description": "Compares this actor with another object to check if they are equal based on ID, first name, last name, and last update timestamp."
+    },
+    {
+      "type": "methods",
+      "name": "hashCode",
+      "signature": "public int hashCode()",
+      "description": "Generates a hash code for the actor based on ID, first name, last name, and last update timestamp."
+    },
+    {
+      "type": "methods",
+      "name": "getCategoryId",
+      "signature": "public int getCategoryId()",
+      "description": "Returns the category ID of the category entity."
+    },
+    {
+      "type": "methods",
+      "name": "setCategoryId",
+      "signature": "public void setCategoryId(int categoryId)",
+      "description": "Sets the category ID of the category entity."
+    },
+    {
+      "type": "methods",
+      "name": "getName",
+      "signature": "public String getName()",
+      "description": "Returns the name of the category entity."
+    },
+    {
+      "type": "methods",
+      "name": "setName",
+      "signature": "public void setName(String name)",
+      "description": "Sets the name of the category entity."
+    },
+    {
+      "type": "methods",
+      "name": "getLastUpdate",
+      "signature": "public Timestamp getLastUpdate()",
+      "description": "Returns the last update timestamp of the category entity."
+    },
+    {
+      "type": "methods",
+      "name": "setLastUpdate",
+      "signature": "public void setLastUpdate(Timestamp lastUpdate)",
+      "description": "Sets the last update timestamp of the category entity."
+    },
+    {
+      "type": "methods",
+      "name": "equals",
+      "signature": "public boolean equals(Object o)",
+      "description": "Compares this category entity with another object to check for equality based on category ID, name, and last update timestamp."
+    },
+    {
+      "type": "methods",
+      "name": "hashCode",
+      "signature": "public int hashCode()",
+      "description": "Generates a hash code for the category entity based on category ID, name, and last update timestamp."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomerId",
+      "signature": "public int getCustomerId()",
+      "description": "Returns the customer ID."
+    },
+    {
+      "type": "methods",
+      "name": "setCustomerId",
+      "signature": "public void setCustomerId(int customerId)",
+      "description": "Sets the customer ID."
+    },
+    {
+      "type": "methods",
+      "name": "getFirstName",
+      "signature": "public String getFirstName()",
+      "description": "Returns the customer's first name."
+    },
+    {
+      "type": "methods",
+      "name": "setFirstName",
+      "signature": "public void setFirstName(String firstName)",
+      "description": "Sets the customer's first name."
+    },
+    {
+      "type": "methods",
+      "name": "getLastName",
+      "signature": "public String getLastName()",
+      "description": "Returns the customer's last name."
+    },
+    {
+      "type": "methods",
+      "name": "setLastName",
+      "signature": "public void setLastName(String lastName)",
+      "description": "Sets the customer's last name."
+    },
+    {
+      "type": "methods",
+      "name": "getEmail",
+      "signature": "public String getEmail()",
+      "description": "Returns the customer's email."
+    },
+    {
+      "type": "methods",
+      "name": "setEmail",
+      "signature": "public void setEmail(String email)",
+      "description": "Sets the customer's email."
+    },
+    {
+      "type": "methods",
+      "name": "getActive",
+      "signature": "public byte getActive()",
+      "description": "Returns the status of customer activity."
+    },
+    {
+      "type": "methods",
+      "name": "setActive",
+      "signature": "public void setActive(byte active)",
+      "description": "Sets the status of customer activity."
+    },
+    {
+      "type": "methods",
+      "name": "getCreateDate",
+      "signature": "public Timestamp getCreateDate()",
+      "description": "Returns the creation date of the customer record."
+    },
+    {
+      "type": "methods",
+      "name": "setCreateDate",
+      "signature": "public void setCreateDate(Timestamp createDate)",
+      "description": "Sets the creation date of the customer record."
+    },
+    {
+      "type": "methods",
+      "name": "getLastUpdate",
+      "signature": "public Timestamp getLastUpdate()",
+      "description": "Returns the timestamp of the last update to the customer record."
+    },
+    {
+      "type": "methods",
+      "name": "setLastUpdate",
+      "signature": "public void setLastUpdate(Timestamp lastUpdate)",
+      "description": "Sets the timestamp of the last update to the customer record."
+    },
+    {
+      "type": "methods",
+      "name": "setLastUpdate",
+      "signature": "public void setLastUpdate(Timestamp lastUpdate)",
+      "description": "Sets the last update timestamp for the Customer object."
+    },
+    {
+      "type": "methods",
+      "name": "equals",
+      "signature": "@Override\npublic boolean equals(Object o)",
+      "description": "Compares the Customer object with another object for equality based on specific fields."
+    },
+    {
+      "type": "methods",
+      "name": "hashCode",
+      "signature": "@Override\npublic int hashCode()",
+      "description": "Generates a hash code for the Customer object based on specific fields."
+    },
+    {
+      "type": "methods",
+      "name": "getFilmId",
+      "signature": "public int getFilmId()",
+      "description": "Returns the filmId of the film."
+    },
+    {
+      "type": "methods",
+      "name": "setFilmId",
+      "signature": "public void setFilmId(int filmId)",
+      "description": "Sets the filmId of the film."
+    },
+    {
+      "type": "methods",
+      "name": "getTitle",
+      "signature": "public String getTitle()",
+      "description": "Returns the title of the film."
+    },
+    {
+      "type": "methods",
+      "name": "setTitle",
+      "signature": "public void setTitle(String title)",
+      "description": "Sets the title of the film."
+    },
+    {
+      "type": "methods",
+      "name": "getDescription",
+      "signature": "public String getDescription()",
+      "description": "Returns the description of the film."
+    },
+    {
+      "type": "methods",
+      "name": "setDescription",
+      "signature": "public void setDescription(String description)",
+      "description": "Sets the description of the film."
+    },
+    {
+      "type": "methods",
+      "name": "getReleaseYear",
+      "signature": "public int getReleaseYear()",
+      "description": "Returns the release year of the film."
+    },
+    {
+      "type": "methods",
+      "name": "setReleaseYear",
+      "signature": "public void setReleaseYear(int releaseYear)",
+      "description": "Sets the release year of the film."
+    },
+    {
+      "type": "methods",
+      "name": "getRentalDuration",
+      "signature": "public Integer getRentalDuration()",
+      "description": "Returns the rental duration of the film."
+    },
+    {
+      "type": "methods",
+      "name": "setRentalDuration",
+      "signature": "public void setRentalDuration(Integer rentalDuration)",
+      "description": "Sets the rental duration of the film."
+    },
+    {
+      "type": "methods",
+      "name": "getRentalRate",
+      "signature": "public BigDecimal getRentalRate()",
+      "description": "Returns the rental rate of the film."
+    },
+    {
+      "type": "methods",
+      "name": "setRentalRate",
+      "signature": "public void setRentalRate(BigDecimal rentalRate)",
+      "description": "Sets the rental rate of the film."
+    },
+    {
+      "type": "methods",
+      "name": "getLength",
+      "signature": "public Integer getLength()",
+      "description": "Returns the length of the film."
+    },
+    {
+      "type": "methods",
+      "name": "setLength",
+      "signature": "public void setLength(Integer length)",
+      "description": "Sets the length of the film."
+    },
+    {
+      "type": "methods",
+      "name": "getReplacementCost",
+      "signature": "@Basic\n@Column(name = \"replacement_cost\")\npublic BigDecimal getReplacementCost()",
+      "description": "Returns the replacement cost of the film."
+    },
+    {
+      "type": "methods",
+      "name": "setReplacementCost",
+      "signature": "public void setReplacementCost(BigDecimal replacementCost)",
+      "description": "Sets the replacement cost of the film."
+    },
+    {
+      "type": "methods",
+      "name": "getRating",
+      "signature": "@Basic\n@Column(name = \"rating\")\npublic String getRating()",
+      "description": "Returns the rating of the film."
+    },
+    {
+      "type": "methods",
+      "name": "setRating",
+      "signature": "public void setRating(String rating)",
+      "description": "Sets the rating of the film."
+    },
+    {
+      "type": "methods",
+      "name": "getSpecialFeatures",
+      "signature": "@Basic\n@Column(name = \"special_features\")\npublic String getSpecialFeatures()",
+      "description": "Returns the special features of the film."
+    },
+    {
+      "type": "methods",
+      "name": "setSpecialFeatures",
+      "signature": "public void setSpecialFeatures(String specialFeatures)",
+      "description": "Sets the special features of the film."
+    },
+    {
+      "type": "methods",
+      "name": "getLastUpdate",
+      "signature": "@Basic\n@Column(name = \"last_update\")\npublic Timestamp getLastUpdate()",
+      "description": "Returns the last update timestamp of the film."
+    },
+    {
+      "type": "methods",
+      "name": "setLastUpdate",
+      "signature": "public void setLastUpdate(Timestamp lastUpdate)",
+      "description": "Sets the last update timestamp of the film."
+    },
+    {
+      "type": "methods",
+      "name": "equals",
+      "signature": "@Override\npublic boolean equals(Object o)",
+      "description": "Compares two Film objects based on their properties like filmId, title, description, release year, etc."
+    },
+    {
+      "type": "methods",
+      "name": "hashCode",
+      "signature": "public int hashCode()",
+      "description": "Calculates the hash code based on the film's attributes like filmId, title, description, etc."
+    },
+    {
+      "type": "methods",
+      "name": "getActorId",
+      "signature": "public int getActorId()",
+      "description": "Returns the actor ID associated with the film actor relationship."
+    },
+    {
+      "type": "methods",
+      "name": "setActorId",
+      "signature": "public void setActorId(int actorId)",
+      "description": "Sets the actor ID for the film actor relationship."
+    },
+    {
+      "type": "methods",
+      "name": "getFilmId",
+      "signature": "public int getFilmId()",
+      "description": "Returns the film ID associated with the film actor relationship."
+    },
+    {
+      "type": "methods",
+      "name": "setFilmId",
+      "signature": "public void setFilmId(int filmId)",
+      "description": "Sets the film ID for the film actor relationship."
+    },
+    {
+      "type": "methods",
+      "name": "getLastUpdate",
+      "signature": "public Timestamp getLastUpdate()",
+      "description": "Returns the last update timestamp for the film actor relationship."
+    },
+    {
+      "type": "methods",
+      "name": "setLastUpdate",
+      "signature": "public void setLastUpdate(Timestamp lastUpdate)",
+      "description": "Sets the last update timestamp for the film actor relationship."
+    },
+    {
+      "type": "methods",
+      "name": "equals",
+      "signature": "public boolean equals(Object o)",
+      "description": "Compares this FilmActor instance with another object to check for equality based on actor ID, film ID, and last update timestamp."
+    },
+    {
+      "type": "methods",
+      "name": "hashCode",
+      "signature": "public int hashCode()",
+      "description": "Generates a hash code for the FilmActor instance based on actor ID, film ID, and last update timestamp."
+    },
+    {
+      "type": "methods",
+      "name": "getActorId",
+      "signature": "public Integer getActorId()",
+      "description": "Returns the actorId value of the FilmActorPK instance."
+    },
+    {
+      "type": "methods",
+      "name": "setActorId",
+      "signature": "public void setActorId(int actorId)",
+      "description": "Sets the actorId value of the FilmActorPK instance."
+    },
+    {
+      "type": "methods",
+      "name": "getFilmId",
+      "signature": "public int getFilmId()",
+      "description": "Returns the filmId value of the FilmActorPK instance."
+    },
+    {
+      "type": "methods",
+      "name": "setFilmId",
+      "signature": "public void setFilmId(int filmId)",
+      "description": "Sets the filmId value of the FilmActorPK instance."
+    },
+    {
+      "type": "methods",
+      "name": "equals",
+      "signature": "@Override\npublic boolean equals(Object o)",
+      "description": "Compares this FilmActorPK instance with another object to check if they are equal based on actorId and filmId values."
+    },
+    {
+      "type": "methods",
+      "name": "hashCode",
+      "signature": "@Override\npublic int hashCode()",
+      "description": "Generates a hash code value for the FilmActorPK instance based on actorId and filmId values."
+    },
+    {
+      "type": "methods",
+      "name": "getFilmId",
+      "signature": "public int getFilmId()",
+      "description": "Returns the film ID associated with this FilmCategory."
+    },
+    {
+      "type": "methods",
+      "name": "setFilmId",
+      "signature": "public void setFilmId(Integer filmId)",
+      "description": "Sets the film ID for this FilmCategory."
+    },
+    {
+      "type": "methods",
+      "name": "getCategoryId",
+      "signature": "public int getCategoryId()",
+      "description": "Returns the category ID associated with this FilmCategory."
+    },
+    {
+      "type": "methods",
+      "name": "setCategoryId",
+      "signature": "public void setCategoryId(Integer categoryId)",
+      "description": "Sets the category ID for this FilmCategory."
+    },
+    {
+      "type": "methods",
+      "name": "getLastUpdate",
+      "signature": "public Timestamp getLastUpdate()",
+      "description": "Returns the timestamp of the last update for this FilmCategory."
+    },
+    {
+      "type": "methods",
+      "name": "setLastUpdate",
+      "signature": "public void setLastUpdate(Timestamp lastUpdate)",
+      "description": "Sets the timestamp of the last update for this FilmCategory."
+    },
+    {
+      "type": "methods",
+      "name": "equals",
+      "signature": "public boolean equals(Object o)",
+      "description": "Compares this FilmCategory with another object to check for equality based on film ID, category ID, and last update timestamp."
+    },
+    {
+      "type": "methods",
+      "name": "hashCode",
+      "signature": "public int hashCode()",
+      "description": "Generates a hash code for this FilmCategory based on film ID, category ID, and last update timestamp."
+    },
+    {
+      "type": "methods",
+      "name": "getFilmId",
+      "signature": "public int getFilmId()",
+      "description": "Returns the film ID associated with this FilmCategoryPK instance."
+    },
+    {
+      "type": "methods",
+      "name": "setFilmId",
+      "signature": "public void setFilmId(int filmId)",
+      "description": "Sets the film ID for this FilmCategoryPK instance."
+    },
+    {
+      "type": "methods",
+      "name": "getCategoryId",
+      "signature": "public int getCategoryId()",
+      "description": "Returns the category ID associated with this FilmCategoryPK instance."
+    },
+    {
+      "type": "methods",
+      "name": "setCategoryId",
+      "signature": "public void setCategoryId(int categoryId)",
+      "description": "Sets the category ID for this FilmCategoryPK instance."
+    },
+    {
+      "type": "methods",
+      "name": "equals",
+      "signature": "public boolean equals(Object o)",
+      "description": "Compares this FilmCategoryPK instance with another object to check if they are equal based on film ID and category ID."
+    },
+    {
+      "type": "methods",
+      "name": "hashCode",
+      "signature": "public int hashCode()",
+      "description": "Generates a hash code for this FilmCategoryPK instance based on film ID and category ID."
+    },
+    {
+      "type": "methods",
+      "name": "getFilmId",
+      "signature": "public int getFilmId()",
+      "description": "Returns the film ID of the FilmText entity."
+    },
+    {
+      "type": "methods",
+      "name": "setFilmId",
+      "signature": "public void setFilmId(int filmId)",
+      "description": "Sets the film ID of the FilmText entity."
+    },
+    {
+      "type": "methods",
+      "name": "getTitle",
+      "signature": "public String getTitle()",
+      "description": "Returns the title of the FilmText entity."
+    },
+    {
+      "type": "methods",
+      "name": "setTitle",
+      "signature": "public void setTitle(String title)",
+      "description": "Sets the title of the FilmText entity."
+    },
+    {
+      "type": "methods",
+      "name": "getDescription",
+      "signature": "public String getDescription()",
+      "description": "Returns the description of the FilmText entity."
+    },
+    {
+      "type": "methods",
+      "name": "setDescription",
+      "signature": "public void setDescription(String description)",
+      "description": "Sets the description of the FilmText entity."
+    },
+    {
+      "type": "methods",
+      "name": "equals",
+      "signature": "public boolean equals(Object o)",
+      "description": "Compares the FilmText entity with another object for equality based on film ID, title, and description."
+    },
+    {
+      "type": "methods",
+      "name": "hashCode",
+      "signature": "public int hashCode()",
+      "description": "Generates a hash code for the FilmText entity based on film ID, title, and description."
+    },
+    {
+      "type": "methods",
+      "name": "getInventoryId",
+      "signature": "public int getInventoryId()",
+      "description": "Returns the inventory ID of the Inventory entity."
+    },
+    {
+      "type": "methods",
+      "name": "setInventoryId",
+      "signature": "public void setInventoryId(int inventoryId)",
+      "description": "Sets the inventory ID of the Inventory entity."
+    },
+    {
+      "type": "methods",
+      "name": "getFilmId",
+      "signature": "public int getFilmId()",
+      "description": "Returns the film ID associated with the Inventory entity."
+    },
+    {
+      "type": "methods",
+      "name": "setFilmId",
+      "signature": "public void setFilmId(int filmId)",
+      "description": "Sets the film ID associated with the Inventory entity."
+    },
+    {
+      "type": "methods",
+      "name": "getLastUpdate",
+      "signature": "public Timestamp getLastUpdate()",
+      "description": "Returns the timestamp of the last update made to the Inventory entity."
+    },
+    {
+      "type": "methods",
+      "name": "setLastUpdate",
+      "signature": "public void setLastUpdate(Timestamp lastUpdate)",
+      "description": "Sets the timestamp of the last update made to the Inventory entity."
+    },
+    {
+      "type": "methods",
+      "name": "equals",
+      "signature": "public boolean equals(Object o)",
+      "description": "Compares this Inventory object with another object to check for equality based on inventory ID and last update timestamp."
+    },
+    {
+      "type": "methods",
+      "name": "hashCode",
+      "signature": "public int hashCode()",
+      "description": "Generates a hash code for the Inventory object based on inventory ID and last update timestamp."
+    },
+    {
+      "type": "methods",
+      "name": "Order",
+      "signature": "public Order(Customer customer, Film film, Rental rental)",
+      "description": "Constructor method to create an Order object with the provided customer, film, and rental information."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomer",
+      "signature": "public Customer getCustomer()",
+      "description": "Method to retrieve the customer associated with the order."
+    },
+    {
+      "type": "methods",
+      "name": "setCustomer",
+      "signature": "public void setCustomer(Customer customer)",
+      "description": "Method to set the customer associated with the order."
+    },
+    {
+      "type": "methods",
+      "name": "getFilm",
+      "signature": "public Film getFilm()",
+      "description": "Method to retrieve the film associated with the order."
+    },
+    {
+      "type": "methods",
+      "name": "setFilm",
+      "signature": "public void setFilm(Film film)",
+      "description": "Method to set the film associated with the order."
+    },
+    {
+      "type": "methods",
+      "name": "getRental",
+      "signature": "public Rental getRental()",
+      "description": "Method to retrieve the rental associated with the order."
+    },
+    {
+      "type": "methods",
+      "name": "setRental",
+      "signature": "public void setRental(Rental rental)",
+      "description": "Method to set the rental associated with the order."
+    },
+    {
+      "type": "methods",
+      "name": "getRentalId",
+      "signature": "public int getRentalId()",
+      "description": "Returns the rental ID associated with the rental transaction."
+    },
+    {
+      "type": "methods",
+      "name": "setRentalId",
+      "signature": "public void setRentalId(int rentalId)",
+      "description": "Sets the rental ID for the rental transaction."
+    },
+    {
+      "type": "methods",
+      "name": "getRentalDate",
+      "signature": "public Timestamp getRentalDate()",
+      "description": "Returns the rental date of the rental transaction."
+    },
+    {
+      "type": "methods",
+      "name": "setRentalDate",
+      "signature": "public void setRentalDate(Timestamp rentalDate)",
+      "description": "Sets the rental date for the rental transaction."
+    },
+    {
+      "type": "methods",
+      "name": "getInventoryId",
+      "signature": "public int getInventoryId()",
+      "description": "Returns the inventory ID associated with the rental transaction."
+    },
+    {
+      "type": "methods",
+      "name": "setInventoryId",
+      "signature": "public void setInventoryId(int inventoryId)",
+      "description": "Sets the inventory ID for the rental transaction."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomerId",
+      "signature": "public int getCustomerId()",
+      "description": "Returns the customer ID associated with the rental transaction."
+    },
+    {
+      "type": "methods",
+      "name": "setCustomerId",
+      "signature": "public void setCustomerId(int customerId)",
+      "description": "Sets the customer ID for the rental transaction."
+    },
+    {
+      "type": "methods",
+      "name": "getReturnDate",
+      "signature": "public Timestamp getReturnDate()",
+      "description": "Returns the return date of the rental transaction."
+    },
+    {
+      "type": "methods",
+      "name": "setReturnDate",
+      "signature": "public void setReturnDate(Timestamp returnDate)",
+      "description": "Sets the return date for the rental transaction."
+    },
+    {
+      "type": "methods",
+      "name": "getStaffId",
+      "signature": "public int getStaffId()",
+      "description": "Returns the staff ID associated with the rental transaction."
+    },
+    {
+      "type": "methods",
+      "name": "setStaffId",
+      "signature": "public void setStaffId(int staffId)",
+      "description": "Sets the staff ID for the rental transaction."
+    },
+    {
+      "type": "methods",
+      "name": "getLastUpdate",
+      "signature": "public Timestamp getLastUpdate()",
+      "description": "Returns the last update timestamp of the rental transaction."
+    },
+    {
+      "type": "methods",
+      "name": "setLastUpdate",
+      "signature": "public void setLastUpdate(Timestamp lastUpdate)",
+      "description": "Sets the last update timestamp for the rental transaction."
+    },
+    {
+      "type": "methods",
+      "name": "setLastUpdate",
+      "signature": "public void setLastUpdate(Timestamp lastUpdate)",
+      "description": "Sets the last update timestamp of the Rental object."
+    },
+    {
+      "type": "methods",
+      "name": "equals",
+      "signature": "@Override\npublic boolean equals(Object o)",
+      "description": "Compares the Rental object with another object for equality based on specific attributes."
+    },
+    {
+      "type": "methods",
+      "name": "hashCode",
+      "signature": "@Override\npublic int hashCode()",
+      "description": "Generates a hash code for the Rental object based on specific attributes."
+    },
+    {
+      "type": "methods",
+      "name": "getStaffId",
+      "signature": "public int getStaffId()",
+      "description": "Returns the staff ID of the staff member."
+    },
+    {
+      "type": "methods",
+      "name": "setStaffId",
+      "signature": "public void setStaffId(int staffId)",
+      "description": "Sets the staff ID of the staff member."
+    },
+    {
+      "type": "methods",
+      "name": "getFirstName",
+      "signature": "public String getFirstName()",
+      "description": "Returns the first name of the staff member."
+    },
+    {
+      "type": "methods",
+      "name": "setFirstName",
+      "signature": "public void setFirstName(String firstName)",
+      "description": "Sets the first name of the staff member."
+    },
+    {
+      "type": "methods",
+      "name": "getLastName",
+      "signature": "public String getLastName()",
+      "description": "Returns the last name of the staff member."
+    },
+    {
+      "type": "methods",
+      "name": "setLastName",
+      "signature": "public void setLastName(String lastName)",
+      "description": "Sets the last name of the staff member."
+    },
+    {
+      "type": "methods",
+      "name": "getPicture",
+      "signature": "public byte[] getPicture()",
+      "description": "Returns the picture of the staff member."
+    },
+    {
+      "type": "methods",
+      "name": "setPicture",
+      "signature": "public void setPicture(byte[] picture)",
+      "description": "Sets the picture of the staff member."
+    },
+    {
+      "type": "methods",
+      "name": "getEmail",
+      "signature": "public String getEmail()",
+      "description": "Returns the email of the staff member."
+    },
+    {
+      "type": "methods",
+      "name": "setEmail",
+      "signature": "public void setEmail(String email)",
+      "description": "Sets the email of the staff member."
+    },
+    {
+      "type": "methods",
+      "name": "getActive",
+      "signature": "public byte getActive()",
+      "description": "Returns the active status of the staff member."
+    },
+    {
+      "type": "methods",
+      "name": "setActive",
+      "signature": "public void setActive(byte active)",
+      "description": "Sets the active status of the staff member."
+    },
+    {
+      "type": "methods",
+      "name": "getUsername",
+      "signature": "public String getUsername()",
+      "description": "Returns the username of the staff member."
+    },
+    {
+      "type": "methods",
+      "name": "setUsername",
+      "signature": "public void setUsername(String username)",
+      "description": "Sets the username of the staff member."
+    },
+    {
+      "type": "methods",
+      "name": "getPassword",
+      "signature": "public String getPassword()",
+      "description": "Returns the password of the staff member."
+    },
+    {
+      "type": "methods",
+      "name": "setPassword",
+      "signature": "public void setPassword(String password)",
+      "description": "Sets the password for the Staff instance."
+    },
+    {
+      "type": "methods",
+      "name": "getLastUpdate",
+      "signature": "@Basic\n@Column(name = \"last_update\")\npublic Timestamp getLastUpdate()",
+      "description": "Returns the last update timestamp for the Staff instance."
+    },
+    {
+      "type": "methods",
+      "name": "setLastUpdate",
+      "signature": "public void setLastUpdate(Timestamp lastUpdate)",
+      "description": "Sets the last update timestamp for the Staff instance."
+    },
+    {
+      "type": "methods",
+      "name": "equals",
+      "signature": "@Override\npublic boolean equals(Object o)",
+      "description": "Compares the current Staff instance with another object for equality based on specific fields."
+    },
+    {
+      "type": "methods",
+      "name": "hashCode",
+      "signature": "@Override\npublic int hashCode()",
+      "description": "Generates a hash code for the Staff instance based on specific fields."
+    },
+    {
+      "type": "methods",
+      "name": "findActorsByFirstNameAndLastName",
+      "signature": "List<Actor> findActorsByFirstNameAndLastName(String firstName, String lastName)",
+      "description": "Finds a list of actors based on their first name and last name."
+    },
+    {
+      "type": "methods",
+      "name": "findActorsByFirstName",
+      "signature": "List<Actor> findActorsByFirstName(String firstName)",
+      "description": "Finds a list of actors based on their first name."
+    },
+    {
+      "type": "methods",
+      "name": "findActorsByLastName",
+      "signature": "List<Actor> findActorsByLastName(String lastName)",
+      "description": "Finds a list of actors based on their last name."
+    },
+    {
+      "type": "methods",
+      "name": "getActorByActorId",
+      "signature": "Actor getActorByActorId(Integer id)",
+      "description": "Retrieves an actor by their unique actor ID."
+    },
+    {
+      "type": "methods",
+      "name": "getCategoryByCategoryId",
+      "signature": "Category getCategoryByCategoryId(Integer id)",
+      "description": "Retrieves a Category entity by its unique category ID."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomerByCredentials",
+      "signature": "Customer getCustomerByCredentials(String username, Integer password)",
+      "description": "Retrieves a customer entity based on the provided username and password."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomerByUsername",
+      "signature": "Customer getCustomerByUsername(String username)",
+      "description": "Retrieves a customer entity based on the provided username."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomersByFirstName",
+      "signature": "List<Customer> getCustomersByFirstName(String firstName)",
+      "description": "Retrieves a list of customer entities based on the provided first name."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomersByLastName",
+      "signature": "List<Customer> getCustomersByLastName(String lastName)",
+      "description": "Retrieves a list of customer entities based on the provided last name."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomersByFullName",
+      "signature": "List<Customer> getCustomersByFullName(String firstName, String lastName)",
+      "description": "Retrieves a list of customer entities based on the provided first name and last name."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomerByCustomerId",
+      "signature": "Customer getCustomerByCustomerId(Integer id)",
+      "description": "Retrieves a customer entity based on the provided customer ID."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomerByEmail",
+      "signature": "Customer getCustomerByEmail(String email)",
+      "description": "Retrieves a customer entity based on the provided email."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomerCount",
+      "signature": "Integer getCustomerCount()",
+      "description": "Retrieves the total count of customer entities in the repository."
+    },
+    {
+      "type": "methods",
+      "name": "getAvailableFilmCount",
+      "signature": "Integer getAvailableFilmCount(Integer id)",
+      "description": "Returns the count of available films with a specific ID by querying the database."
+    },
+    {
+      "type": "methods",
+      "name": "getAvailableFilms",
+      "signature": "List<Film> getAvailableFilms()",
+      "description": "Returns a list of all available films by joining the film and inventory tables."
+    },
+    {
+      "type": "methods",
+      "name": "getAllFilmsByCategory",
+      "signature": "List<Film> getAllFilmsByCategory(Integer categoryId)",
+      "description": "Returns a list of films belonging to a specific category by joining film, film_category, and category tables."
+    },
+    {
+      "type": "methods",
+      "name": "getAllFilmsByActor",
+      "signature": "List<Film> getAllFilmsByActor(Integer actorId)",
+      "description": "Returns a list of films featuring a specific actor by joining actor, film_actor, and film tables."
+    },
+    {
+      "type": "methods",
+      "name": "findByTitle",
+      "signature": "List<Film> findByTitle(String title)",
+      "description": "Returns a list of films with a specific title."
+    },
+    {
+      "type": "methods",
+      "name": "getFilmByFilmId",
+      "signature": "Film getFilmByFilmId(Integer id)",
+      "description": "Returns a film entity based on its ID."
+    },
+    {
+      "type": "methods",
+      "name": "getInventoriesByInventoryId",
+      "signature": "Inventory getInventoriesByInventoryId(Integer inventoryId)",
+      "description": "Retrieves inventory items by their unique inventory ID by performing a SQL query that joins the inventory and rental tables."
+    },
+    {
+      "type": "methods",
+      "name": "deleteInventoryByInventoryId",
+      "signature": "void deleteInventoryByInventoryId(@Param(\"id\") Integer id)",
+      "description": "Deletes inventory items based on the provided inventory ID by executing a SQL delete query."
+    },
+    {
+      "type": "methods",
+      "name": "getInventoryCount",
+      "signature": "Integer getInventoryCount()",
+      "description": "Returns the total count of inventory items by executing a SQL count query on the inventory table."
+    },
+    {
+      "type": "methods",
+      "name": "getRentalByRentalId",
+      "signature": "Rental getRentalByRentalId(Integer id)",
+      "description": "Retrieves a rental entity by its rental ID."
+    },
+    {
+      "type": "methods",
+      "name": "getRentalByCustomerId",
+      "signature": "List<Rental> getRentalByCustomerId(Integer customerId)",
+      "description": "Retrieves a list of rental entities associated with a specific customer ID by performing a SQL query that joins the rental and customer tables."
+    },
+    {
+      "type": "methods",
+      "name": "getStaffByUsername",
+      "signature": "Staff getStaffByUsername(String username)",
+      "description": "Retrieves a staff member based on the provided username."
+    },
+    {
+      "type": "methods",
+      "name": "handle",
+      "signature": "public void handle(HttpServletRequest request, HttpServletResponse response, AccessDeniedException e) throws IOException, ServletException",
+      "description": "Handles access denied exceptions by redirecting the user to an error page."
+    },
+    {
+      "type": "methods",
+      "name": "addViewControllers",
+      "signature": "public void addViewControllers(ViewControllerRegistry registry)",
+      "description": "Adds view controllers for specific URLs with corresponding view names. In this case, it sets up view controllers for '/home', '/', and '/login' URLs."
+    },
+    {
+      "type": "methods",
+      "name": "onAuthenticationSuccess",
+      "signature": "public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException",
+      "description": "This method is called when authentication is successful. It checks the user's role and redirects them to the appropriate page (customer or owner) using the RedirectStrategy."
+    },
+    {
+      "type": "methods",
+      "name": "loadUserByUsername",
+      "signature": "public UserDetails loadUserByUsername(String anyUsername) throws UsernameNotFoundException",
+      "description": "This method loads user details based on the provided username. It checks if the username belongs to a customer or staff member, assigns roles accordingly, and returns UserDetails object."
+    },
+    {
+      "type": "methods",
+      "name": "configureGlobal",
+      "signature": "protected void configureGlobal(AuthenticationManagerBuilder auth)",
+      "description": "Configures the authentication manager builder with custom user details service and password encoder."
+    },
+    {
+      "type": "methods",
+      "name": "configure",
+      "signature": "protected void configure(HttpSecurity http)",
+      "description": "Configures HTTP security settings such as authorization rules, login/logout behavior, and success/failure handlers."
+    },
+    {
+      "type": "methods",
+      "name": "daoAuthenticationProvider",
+      "signature": "@Bean public DaoAuthenticationProvider daoAuthenticationProvider()",
+      "description": "Creates a DAO authentication provider bean for authenticating users using a custom user details service and password encoder."
+    },
+    {
+      "type": "methods",
+      "name": "configure",
+      "signature": "protected void configure(HttpSecurity http) throws Exception",
+      "description": "Defines which URL paths should be secured and which should not. It specifies role-based access control for different paths and sets up custom login and error pages."
+    },
+    {
+      "type": "methods",
+      "name": "userDetailsService",
+      "signature": "@Override public UserDetailsService userDetailsService()",
+      "description": "Returns an instance of UserDetailsServiceImpl, which implements the UserDetailsService interface for retrieving user details."
+    },
+    {
+      "type": "methods",
+      "name": "passwordEncoder",
+      "signature": "public PasswordEncoder passwordEncoder()",
+      "description": "Returns a BCryptPasswordEncoder instance for encoding passwords securely."
+    },
+    {
+      "type": "methods",
+      "name": "authenticationProvider",
+      "signature": "public DaoAuthenticationProvider authenticationProvider()",
+      "description": "Returns a DaoAuthenticationProvider instance configured with the userDetailsService and passwordEncoder for authentication."
+    },
+    {
+      "type": "methods",
+      "name": "configure",
+      "signature": "protected void configure(AuthenticationManagerBuilder auth) throws Exception",
+      "description": "Configures the AuthenticationManagerBuilder with the authenticationProvider for authentication."
+    },
+    {
+      "type": "methods",
+      "name": "getAllActors",
+      "signature": "public List<Actor> getAllActors()",
+      "description": "Returns a list of all actors in the database."
+    },
+    {
+      "type": "methods",
+      "name": "getActorByID",
+      "signature": "public Actor getActorByID(int id)",
+      "description": "Returns the actor with the specified ID."
+    },
+    {
+      "type": "methods",
+      "name": "getActorsByFullName",
+      "signature": "public List<Actor> getActorsByFullName(String firstName, String lastName)",
+      "description": "Returns a list of actors with the specified first and last names."
+    },
+    {
+      "type": "methods",
+      "name": "getActorsByFirstName",
+      "signature": "public List<Actor> getActorsByFirstName(String firstName)",
+      "description": "Returns a list of actors with the specified first name."
+    },
+    {
+      "type": "methods",
+      "name": "getActorsByLastName",
+      "signature": "public List<Actor> getActorsByLastName(String lastName)",
+      "description": "Returns a list of actors with the specified last name."
+    },
+    {
+      "type": "methods",
+      "name": "getActorFullNameFromID",
+      "signature": "public String getActorFullNameFromID(Integer id)",
+      "description": "Returns the full name of the actor with the specified ID."
+    },
+    {
+      "type": "methods",
+      "name": "getAllCategories",
+      "signature": "public List<Category> getAllCategories()",
+      "description": "Retrieves all categories from the database using the CategoryRepository."
+    },
+    {
+      "type": "methods",
+      "name": "getByCategoryId",
+      "signature": "public Category getByCategoryId(Integer id)",
+      "description": "Retrieves a specific category by its ID from the database using the CategoryRepository."
+    },
+    {
+      "type": "methods",
+      "name": "getAllCustomers",
+      "signature": "public List<Customer> getAllCustomers()",
+      "description": "Retrieves all customers from the repository."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomersByFirstName",
+      "signature": "public List<Customer> getCustomersByFirstName(String firstName)",
+      "description": "Retrieves customers by their first name from the repository."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomersByLastName",
+      "signature": "public List<Customer> getCustomersByLastName(String lastName)",
+      "description": "Retrieves customers by their last name from the repository."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomersByFullName",
+      "signature": "public List<Customer> getCustomersByFullName(String firstName, String lastName)",
+      "description": "Retrieves customers by their full name from the repository."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomerByID",
+      "signature": "public Customer getCustomerByID(int id)",
+      "description": "Retrieves a customer by their ID from the repository."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomerByEmail",
+      "signature": "public Customer getCustomerByEmail(String email)",
+      "description": "Retrieves a customer by their email address from the repository."
+    },
+    {
+      "type": "methods",
+      "name": "save",
+      "signature": "public void save(Customer customer)",
+      "description": "Saves a customer entity to the repository."
+    },
+    {
+      "type": "methods",
+      "name": "getCustomerCount",
+      "signature": "public Integer getCustomerCount()",
+      "description": "Retrieves the total count of customers in the repository."
+    },
+    {
+      "type": "methods",
+      "name": "getAllFilms",
+      "signature": "public List<Film> getAllFilms()",
+      "description": "Retrieves all films from the repository."
+    },
+    {
+      "type": "methods",
+      "name": "getFilmByID",
+      "signature": "public Film getFilmByID(int id)",
+      "description": "Retrieves a film by its ID from the repository."
+    },
+    {
+      "type": "methods",
+      "name": "getFilmsByTitle",
+      "signature": "public List<Film> getFilmsByTitle(String title)",
+      "description": "Retrieves films by their title from the repository."
+    },
+    {
+      "type": "methods",
+      "name": "getAvailableFilms",
+      "signature": "public List<Film> getAvailableFilms()",
+      "description": "Retrieves available films from the repository."
+    },
+    {
+      "type": "methods",
+      "name": "getAvailableFilmCount",
+      "signature": "public Integer getAvailableFilmCount(Integer id)",
+      "description": "Retrieves the count of available films for a given ID."
+    },
+    {
+      "type": "methods",
+      "name": "getFilmsByCategory",
+      "signature": "public List<Film> getFilmsByCategory(Integer id)",
+      "description": "Retrieves films by category ID from the repository."
+    },
+    {
+      "type": "methods",
+      "name": "getFilmsByActor",
+      "signature": "public List<Film> getFilmsByActor(Integer id)",
+      "description": "Retrieves films by actor ID from the repository."
+    },
+    {
+      "type": "methods",
+      "name": "save",
+      "signature": "public void save(Film film)",
+      "description": "Saves a film entity to the repository."
+    },
+    {
+      "type": "methods",
+      "name": "deleteFilmById",
+      "signature": "public void deleteFilmById(int id)",
+      "description": "Deletes a film by its ID from the repository."
+    },
+    {
+      "type": "methods",
+      "name": "getAllInventory",
+      "signature": "public List<Inventory> getAllInventory()",
+      "description": "Retrieves all inventory items from the repository."
+    },
+    {
+      "type": "methods",
+      "name": "getInventoriesById",
+      "signature": "public Inventory getInventoriesById(Integer id)",
+      "description": "Retrieves a specific inventory item by its ID from the repository."
+    },
+    {
+      "type": "methods",
+      "name": "deleteInventoryItemById",
+      "signature": "@Transactional\npublic void deleteInventoryItemById(Integer id)",
+      "description": "Deletes an inventory item by its ID from the repository in a transactional manner."
+    },
+    {
+      "type": "methods",
+      "name": "getInventoryCount",
+      "signature": "public Integer getInventoryCount()",
+      "description": "Returns the total count of inventory items in the repository."
+    },
+    {
+      "type": "methods",
+      "name": "getRentalsByCustomer",
+      "signature": "public List<Rental> getRentalsByCustomer(Integer id)",
+      "description": "Retrieves a list of rentals associated with the given customer ID."
+    },
+    {
+      "type": "methods",
+      "name": "addRental",
+      "signature": "public void addRental(int inventoryId, int customerId, Timestamp returnDate)",
+      "description": "Adds a new rental to the system with the specified inventory ID, customer ID, and return date."
+    },
+    {
+      "type": "methods",
+      "name": "getAllStaff",
+      "signature": "public List<Staff> getAllStaff()",
+      "description": "Retrieves all staff members from the database using the StaffRepository."
+    },
+    {
+      "type": "methods",
+      "name": "getStaffByUsername",
+      "signature": "public Staff getStaffByUsername(String username)",
+      "description": "Retrieves a staff member by their username from the database using the StaffRepository."
+    },
+    {
+      "type": "methods",
+      "name": "testActorById",
+      "signature": "public void testActorById()",
+      "description": "Tests finding an actor by actor ID, setting up mock data and asserting the expected result."
+    },
+    {
+      "type": "methods",
+      "name": "testActorByFirstName",
+      "signature": "public void testActorByFirstName()",
+      "description": "Tests finding an actor by first name, setting up mock data and asserting the expected result."
+    },
+    {
+      "type": "methods",
+      "name": "testActorByLastName",
+      "signature": "public void testActorByLastName()",
+      "description": "Tests finding an actor by last name, setting up mock data and asserting the expected result."
+    },
+    {
+      "type": "methods",
+      "name": "testActorByMore",
+      "signature": "public void testActorByMore()",
+      "description": "Tests finding an actor by multiple criteria (first name, last name), setting up mock data and asserting the expected results."
+    },
+    {
+      "type": "methods",
+      "name": "testActorByFullName",
+      "signature": "public void testActorByFullName()",
+      "description": "Tests the functionality of finding an actor by their full name and verifying the last update timestamp."
+    },
+    {
+      "type": "methods",
+      "name": "testFilmByID",
+      "signature": "public void testFilmByID()",
+      "description": "Tests the functionality of finding a film by its ID and verifying the retrieved film ID."
+    },
+    {
+      "type": "methods",
+      "name": "testFilmByDescritption",
+      "signature": "public void testFilmByDescritption()",
+      "description": "Tests the functionality of finding a film by its description and verifying the retrieved description."
+    },
+    {
+      "type": "methods",
+      "name": "testFilmByRating",
+      "signature": "public void testFilmByRating()",
+      "description": "Tests the functionality of finding a film by its rating and verifying the retrieved rating."
+    },
+    {
+      "type": "methods",
+      "name": "testFilmByLength",
+      "signature": "public void testFilmByLength()",
+      "description": "Tests the functionality of finding a film by its length and verifying the retrieved length."
+    },
+    {
+      "type": "methods",
+      "name": "testFilmByName",
+      "signature": "public void testFilmByName()",
+      "description": "Tests the functionality of finding a film by its name 'Goodfellas' and verifying the retrieved film's title."
+    },
+    {
+      "type": "methods",
+      "name": "testFilmByDescription",
+      "signature": "public void testFilmByDescription()",
+      "description": "Tests the functionality of finding a film by its description 'This is a long description' and verifying the retrieved film's description."
+    },
+    {
+      "type": "methods",
+      "name": "testFilms",
+      "signature": "public void testFilms()",
+      "description": "Tests various attributes of a film object like last update timestamp, title, special features, replacement cost, rental rate, rental duration, and release year."
+    },
+    {
+      "type": "methods",
+      "name": "testCategoryById",
+      "signature": "public void testCategoryById()",
+      "description": "Tests the functionality of retrieving a category by its ID and verifying the retrieved category's ID."
+    },
+    {
+      "type": "methods",
+      "name": "testCategoryByName",
+      "signature": "public void testCategoryByName()",
+      "description": "Creates a category object with a name and ID, mocks a repository call to retrieve the category by ID, and asserts that the retrieved category's ID matches the expected value."
+    },
+    {
+      "type": "methods",
+      "name": "testCustomerById",
+      "signature": "public void testCustomerById()",
+      "description": "Creates a customer object with an ID, mocks a repository call to retrieve the customer by ID, and asserts that the retrieved customer's ID matches the expected value."
+    },
+    {
+      "type": "methods",
+      "name": "testCustomer",
+      "signature": "public void testCustomer()",
+      "description": "Creates a customer object with various attributes, mocks a repository call to retrieve the customer by ID, and asserts that the retrieved customer's attributes match the expected values."
+    },
+    {
+      "type": "methods",
+      "name": "testStaff",
+      "signature": "public void testStaff()",
+      "description": "Creates a timestamp object, which is not used in the test method. This method seems incomplete or unnecessary for the current testing context."
+    },
+    {
+      "type": "methods",
+      "name": "testFilmController",
+      "signature": "public void testFilmController()",
+      "description": "Tests the getFilmDetails method of FilmController by creating a new FilmController instance and asserting the result."
+    },
+    {
+      "type": "methods",
+      "name": "testFilmController2",
+      "signature": "public void testFilmController2()",
+      "description": "Tests the getFilms method of FilmController by creating a new FilmController instance and asserting the result."
+    },
+    {
+      "type": "methods",
+      "name": "testCategory",
+      "signature": "public void testCategory()",
+      "description": "Tests the getCategoryDetails method of CategoryController by creating a new CategoryController instance and asserting the result."
+    },
+    {
+      "type": "methods",
+      "name": "testCategory2",
+      "signature": "public void testCategory2()",
+      "description": "Initializes a CategoryController with filmService and categoryService, calls getCategories method with a ModelMap, and asserts the result."
+    },
+    {
+      "type": "methods",
+      "name": "testActorController1",
+      "signature": "public void testActorController1()",
+      "description": "Initializes an ActorController with filmService and actorService, calls getActors method with a ModelMap, first name, and last name, and asserts the result."
+    },
+    {
+      "type": "methods",
+      "name": "testCustomerController",
+      "signature": "public void testCustomerController()",
+      "description": "Initializes a CustomerController with customerService, rentalService, inventoryService, and filmService, calls getCustomers method with a ModelMap and 'ALL CUSTOMERS' as parameters, and asserts the result."
+    },
+    {
+      "type": "methods",
+      "name": "testCustomerController2",
+      "signature": "public void testCustomerController2()",
+      "description": "Initializes a CustomerController with customerService, rentalService, inventoryService, and filmService, calls showUsersRentalHistory method with a ModelMap and 10 as parameters, and asserts the result."
+    },
+    {
+      "type": "methods",
+      "name": "testInventory",
+      "signature": "public void testInventory()",
+      "description": "Creates a film, inventory, and sets various properties. Then mocks a method call to retrieve inventory by ID and asserts the expected values."
+    },
+    {
+      "type": "methods",
+      "name": "testRental",
+      "signature": "public void testRental()",
+      "description": "Creates a rental scenario with a customer, staff, and inventory. Sets various properties for the rental and asserts the expected values."
+    },
+    {
+      "type": "methods",
+      "name": "testRentalByTimeStamp",
+      "signature": "public void testRentalByTimeStamp()",
+      "description": "This method tests the retrieval of a rental object by its rental ID and verifies its attributes such as rental ID, inventory ID, last update timestamp, customer ID, staff ID, return date, and rental date."
+    },
+    {
+      "type": "methods",
+      "name": "testCategoryByTimeStamp",
+      "signature": "public void testCategoryByTimeStamp()",
+      "description": "This method tests the retrieval of a category object by its category ID and verifies its last update timestamp."
+    },
+    {
+      "type": "methods",
+      "name": "MainController1",
+      "signature": "public void MainController1()",
+      "description": "Instantiates a MainController object and calls the home method to verify that it returns 'home'."
+    },
+    {
+      "type": "methods",
+      "name": "MainController2",
+      "signature": "public void MainController2()",
+      "description": "Instantiates a MainController object and calls the account method to verify that it returns 'account'."
+    },
+    {
+      "type": "methods",
+      "name": "MainController3",
+      "signature": "public void MainController3()",
+      "description": "Instantiates a MainController object and calls the login method to verify that it returns 'login'."
+    }
+  ],
+  "complexity": [
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\.mvn\\wrapper\\MavenWrapperDownloader.java",
+      "chunk_index": 0,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\.mvn\\wrapper\\MavenWrapperDownloader.java",
+      "chunk_index": 1,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\.mvn\\wrapper\\MavenWrapperDownloader.java",
+      "chunk_index": 2,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\SakilaProjectApplication.java",
+      "chunk_index": 3,
+      "complexity": "simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\ActorController.java",
+      "chunk_index": 4,
+      "complexity": "Moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\ActorController.java",
+      "chunk_index": 5,
+      "complexity": "Moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\CategoryController.java",
+      "chunk_index": 6,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\CustomerController.java",
+      "chunk_index": 7,
+      "complexity": "Moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\CustomerController.java",
+      "chunk_index": 8,
+      "complexity": "Moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\CustomerController.java",
+      "chunk_index": 9,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\FilmController.java",
+      "chunk_index": 10,
+      "complexity": "Moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\FilmController.java",
+      "chunk_index": 11,
+      "complexity": "Moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\FilmController.java",
+      "chunk_index": 12,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\FilmController.java",
+      "chunk_index": 13,
+      "complexity": "Moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\MainController.java",
+      "chunk_index": 14,
+      "complexity": "simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\StaffController.java",
+      "chunk_index": 15,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Actor.java",
+      "chunk_index": 16,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Category.java",
+      "chunk_index": 17,
+      "complexity": "simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Customer.java",
+      "chunk_index": 18,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Customer.java",
+      "chunk_index": 19,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Film.java",
+      "chunk_index": 20,
+      "complexity": "simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Film.java",
+      "chunk_index": 21,
+      "complexity": "Moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Film.java",
+      "chunk_index": 22,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\FilmActor.java",
+      "chunk_index": 23,
+      "complexity": "simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\FilmActorPK.java",
+      "chunk_index": 24,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\FilmCategory.java",
+      "chunk_index": 25,
+      "complexity": "simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\FilmCategoryPK.java",
+      "chunk_index": 26,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\FilmText.java",
+      "chunk_index": 27,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Inventory.java",
+      "chunk_index": 28,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Order.java",
+      "chunk_index": 29,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Rental.java",
+      "chunk_index": 30,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Rental.java",
+      "chunk_index": 31,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Staff.java",
+      "chunk_index": 32,
+      "complexity": "simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Staff.java",
+      "chunk_index": 33,
+      "complexity": "Moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\ActorRepository.java",
+      "chunk_index": 34,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\CategoryRepository.java",
+      "chunk_index": 35,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\CustomerRepository.java",
+      "chunk_index": 36,
+      "complexity": "Moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\FilmRepository.java",
+      "chunk_index": 37,
+      "complexity": "Moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\InventoryRepository.java",
+      "chunk_index": 38,
+      "complexity": "Moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\RentalRepository.java",
+      "chunk_index": 39,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\StaffRepository.java",
+      "chunk_index": 40,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\FailureHandler.java",
+      "chunk_index": 41,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\MvcConfig.java",
+      "chunk_index": 42,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\SuccessHandler.java",
+      "chunk_index": 43,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\UserDetailsServiceImpl.java",
+      "chunk_index": 44,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\WebSecurityConfig.java",
+      "chunk_index": 45,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\WebSecurityConfig.java",
+      "chunk_index": 46,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\ActorService.java",
+      "chunk_index": 47,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\CategoryService.java",
+      "chunk_index": 48,
+      "complexity": "simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\CustomerService.java",
+      "chunk_index": 49,
+      "complexity": "Simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\FilmService.java",
+      "chunk_index": 50,
+      "complexity": "Moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\InventoryService.java",
+      "chunk_index": 51,
+      "complexity": "simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\RentalService.java",
+      "chunk_index": 52,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\StaffService.java",
+      "chunk_index": 53,
+      "complexity": "simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 54,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 55,
+      "complexity": "simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 56,
+      "complexity": "simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 57,
+      "complexity": "simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 58,
+      "complexity": "Moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 59,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 60,
+      "complexity": "simple"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 61,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 62,
+      "complexity": "moderate"
+    },
+    {
+      "type": "complexity",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\SakilaProjectApplicationTests.java",
+      "chunk_index": 63,
+      "complexity": "simple"
+    }
+  ],
+  "notes": [
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\.mvn\\wrapper\\MavenWrapperDownloader.java",
+      "chunk_index": 0,
+      "notes": "This code snippet is a standalone class that serves a specific purpose within a larger project. It relies on command-line arguments to specify the base directory for downloading the Maven wrapper JAR file."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\.mvn\\wrapper\\MavenWrapperDownloader.java",
+      "chunk_index": 1,
+      "notes": "This code snippet handles file I/O operations, exception handling, and property loading. It follows a structured approach to reading and setting the download URL based on the properties file."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\.mvn\\wrapper\\MavenWrapperDownloader.java",
+      "chunk_index": 2,
+      "notes": "The code uses Java I/O operations to download and save the file. It also sets up an Authenticator for handling authentication if credentials are provided through environment variables. Error handling is done through catching Throwable in the main method."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\SakilaProjectApplication.java",
+      "chunk_index": 3,
+      "notes": "The use of the @SpringBootApplication annotation indicates that this class is the main entry point for the Spring Boot application."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\ActorController.java",
+      "chunk_index": 4,
+      "notes": "The ActorController class follows the Spring MVC pattern with annotations like @Controller and @GetMapping. It uses dependency injection with @Autowired to inject FilmService and ActorService instances. The getActors method efficiently handles different filter combinations to fetch actor data."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\ActorController.java",
+      "chunk_index": 5,
+      "notes": "The code follows a typical MVC pattern where the controller method 'getActorFilmDetails' interacts with services to retrieve data and populate the model map. There is a dependency on 'actorService' and 'filmService' for data retrieval."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\CategoryController.java",
+      "chunk_index": 6,
+      "notes": "The CategoryController uses Spring's @Controller annotation for request handling. It relies on dependency injection with @Autowired to access FilmService and CategoryService instances. The controller provides methods for retrieving and displaying category information, maintaining a clear separation of concerns."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\CustomerController.java",
+      "chunk_index": 7,
+      "notes": "The controller class follows the Spring MVC pattern with annotations for mapping requests to methods. It relies on services for business logic related to customers, rentals, inventory, and films."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\CustomerController.java",
+      "chunk_index": 8,
+      "notes": "The code follows a typical MVC pattern where data is fetched from services and added to the model map for rendering in the view. It handles different scenarios based on filter values to retrieve the appropriate customer data. Potential issue: The 'currentUser' method assumes the user is authenticated and may need additional validation."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\CustomerController.java",
+      "chunk_index": 9,
+      "notes": "The code follows a typical MVC pattern with model manipulation and view rendering. It relies on various service classes for data retrieval and processing."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\FilmController.java",
+      "chunk_index": 10,
+      "notes": "The FilmController class follows the Spring MVC pattern for handling web requests. It uses various service classes like FilmService, InventoryService, RentalService, and CustomerService to interact with the database and retrieve necessary data for rendering views. The class is annotated with @Controller to mark it as a controller component in the Spring application context."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\FilmController.java",
+      "chunk_index": 11,
+      "notes": "The code follows the Spring MVC pattern with annotations like @GetMapping and @RequestParam for mapping requests to methods and handling request parameters. It interacts with a 'filmService' to retrieve film data, indicating a separation of concerns. Potential issue: The 'getFilms' method could benefit from input validation to handle edge cases where 'filter' is null or empty."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\FilmController.java",
+      "chunk_index": 12,
+      "notes": "The code uses Spring's @GetMapping annotation to map HTTP GET requests to the specified endpoints. It interacts with various services like customerService, inventoryService, filmService, and rentalService to perform the necessary operations. The code includes loops for iterating over inventory items and films to process the data efficiently."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\FilmController.java",
+      "chunk_index": 13,
+      "notes": "The code follows the Spring MVC pattern with request mappings for edit and delete operations. It relies on a film service for data retrieval and manipulation."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\MainController.java",
+      "chunk_index": 14,
+      "notes": "This controller class uses Spring's annotations for mapping request URLs to specific methods, following the MVC pattern commonly used in web applications."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\controller\\StaffController.java",
+      "chunk_index": 15,
+      "notes": "The controller follows the Spring MVC pattern with annotations for mapping requests to methods. It uses dependency injection for the StaffService, CustomerService, and InventoryService instances."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Actor.java",
+      "chunk_index": 16,
+      "notes": "This class uses JPA annotations for mapping to a database table. It follows the JavaBean convention with getter and setter methods for its properties."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Category.java",
+      "chunk_index": 17,
+      "notes": "This class uses JPA annotations for mapping to database columns. It follows the standard getter and setter methods for accessing and modifying entity properties."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Customer.java",
+      "chunk_index": 18,
+      "notes": "This code follows the JavaBean convention for getter and setter methods. It uses JPA annotations for mapping database columns to entity properties."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Customer.java",
+      "chunk_index": 19,
+      "notes": "The equals method compares the Customer object based on its fields, including the last update timestamp. The hashCode method generates a hash code using the same fields for consistency with the equals method."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Film.java",
+      "chunk_index": 20,
+      "notes": "This class uses JPA annotations for mapping to database columns. It represents a basic entity with getters and setters for its properties."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Film.java",
+      "chunk_index": 21,
+      "notes": "The code follows Java Bean conventions with getter and setter methods for the properties. The equals method implementation checks for equality based on multiple properties, which can increase complexity but ensures accurate comparison of Film objects."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Film.java",
+      "chunk_index": 22,
+      "notes": "The hashCode method is used for generating hash codes for objects, typically used in hashing-based data structures like HashMaps."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\FilmActor.java",
+      "chunk_index": 23,
+      "notes": "The class uses JPA annotations for mapping to database tables and defining primary key fields. It implements equals and hashCode methods for object comparison and hashing."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\FilmActorPK.java",
+      "chunk_index": 24,
+      "notes": "This class follows the Java Bean convention with getter and setter methods for the private fields. It also overrides equals and hashCode methods for proper comparison and hashing based on the composite key values."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\FilmCategory.java",
+      "chunk_index": 25,
+      "notes": "This entity class uses JPA annotations for mapping to database tables and defining primary key fields. It also overrides equals and hashCode methods for proper object comparison and hashing."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\FilmCategoryPK.java",
+      "chunk_index": 26,
+      "notes": "This class follows the Java bean convention with getter and setter methods for private fields. It also overrides equals and hashCode methods for proper comparison and hashing based on the composite primary key fields."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\FilmText.java",
+      "chunk_index": 27,
+      "notes": "This class uses JPA annotations for mapping the entity to a database table. It follows the JavaBean convention with getter and setter methods for the entity fields."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Inventory.java",
+      "chunk_index": 28,
+      "notes": "This class uses JPA annotations for mapping to database columns. It implements equals() and hashCode() methods for object comparison and hashing."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Order.java",
+      "chunk_index": 29,
+      "notes": "This code chunk follows a basic Java bean pattern with getter and setter methods for the private fields. It is a straightforward representation of an order entity in the Sakila project."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Rental.java",
+      "chunk_index": 30,
+      "notes": "This code follows the JavaBean convention for defining properties with corresponding getter and setter methods. It uses JPA annotations for mapping the class to a database table in the Sakila project."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Rental.java",
+      "chunk_index": 31,
+      "notes": "The code follows the standard Java conventions for implementing the equals and hashCode methods for object comparison and hashing. It relies on the Objects class for null-safe equality checks and hashing."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Staff.java",
+      "chunk_index": 32,
+      "notes": "This class uses JPA annotations for mapping to database columns. It also includes basic getter and setter methods for its attributes."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\entities\\Staff.java",
+      "chunk_index": 33,
+      "notes": "The code implements the equals and hashCode methods for proper object comparison and hashing. It uses annotations like @Basic and @Column for mapping to database columns."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\ActorRepository.java",
+      "chunk_index": 34,
+      "notes": "This code follows the repository pattern commonly used in Spring Data JPA for interacting with databases. It provides convenient methods for querying Actor entities based on different criteria."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\CategoryRepository.java",
+      "chunk_index": 35,
+      "notes": "This code follows the Spring Data JPA repository pattern, providing CRUD functionality for Category entities."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\CustomerRepository.java",
+      "chunk_index": 36,
+      "notes": "The code uses Spring Data JPA annotations for defining custom queries. It provides a variety of methods for retrieving customer entities based on different criteria."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\FilmRepository.java",
+      "chunk_index": 37,
+      "notes": "The code uses Spring Data JPA annotations like @Query for custom queries. It follows the repository pattern for data access and retrieval. The methods provide various ways to fetch film data based on different criteria."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\InventoryRepository.java",
+      "chunk_index": 38,
+      "notes": "This code uses Spring Data JPA annotations like @Query and @Modifying to define custom database queries. It also leverages JpaRepository for standard CRUD operations on the Inventory entity. The complexity is moderate due to the use of native SQL queries and the need to understand the underlying database schema."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\RentalRepository.java",
+      "chunk_index": 39,
+      "notes": "The code uses Spring Data JPA annotations and interfaces to simplify database operations. The custom query in getRentalByCustomerId method indicates a more complex data retrieval process beyond basic CRUD operations."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\respositories\\StaffRepository.java",
+      "chunk_index": 40,
+      "notes": "This repository interface extends JpaRepository, providing basic CRUD functionality for the Staff entity. The method getStaffByUsername uses a native SQL query to fetch staff by username."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\FailureHandler.java",
+      "chunk_index": 41,
+      "notes": "This class is annotated with @Component, indicating that it is a Spring-managed component. It relies on Spring Security for handling access denied exceptions."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\MvcConfig.java",
+      "chunk_index": 42,
+      "notes": "This class is using Spring MVC configuration to define view controllers for specific URLs, simplifying the mapping between URLs and views in the web application."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\SuccessHandler.java",
+      "chunk_index": 43,
+      "notes": "The code uses Spring Security components for handling authentication and redirection. It follows a simple role-based redirection strategy based on the user's role (ROLE_USER or ROLE_ADMIN)."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\UserDetailsServiceImpl.java",
+      "chunk_index": 44,
+      "notes": "The code uses Spring Security for user authentication and authorization. It utilizes BCryptPasswordEncoder for password encoding and assigns roles based on the user type (customer or staff). The method handles potential UsernameNotFoundException by throwing an exception if the user is not found."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\WebSecurityConfig.java",
+      "chunk_index": 45,
+      "notes": "This code uses Spring Security annotations and configurations to set up web security. It relies on custom services for customer and staff, as well as a success handler for authentication success. The use of dependency injection and Spring annotations simplifies the configuration process."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\securingweb\\WebSecurityConfig.java",
+      "chunk_index": 46,
+      "notes": "The code uses Spring Security annotations like @Autowired and @Bean for dependency injection and bean creation. It follows a standard security configuration pattern with role-based access control and custom authentication providers."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\ActorService.java",
+      "chunk_index": 47,
+      "notes": "The ActorService class relies on the ActorRepository for database interactions. It follows the service layer pattern in a Spring application."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\CategoryService.java",
+      "chunk_index": 48,
+      "notes": "The CategoryService class follows the service layer pattern by providing methods to interact with the Category entity. It depends on the CategoryRepository for database operations."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\CustomerService.java",
+      "chunk_index": 49,
+      "notes": "This service class follows a typical CRUD pattern for managing customer data. It relies on the CustomerRepository for data access operations. The use of Spring's @Service annotation indicates that this class is a service component in the application context."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\FilmService.java",
+      "chunk_index": 50,
+      "notes": "The code follows the Service layer pattern by encapsulating business logic. It relies on a FilmRepository for data access operations. The methods provide various functionalities for managing film entities in the Sakila project."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\InventoryService.java",
+      "chunk_index": 51,
+      "notes": "The class uses Spring's @Service annotation for component scanning and dependency injection. It also leverages @Transactional for managing transactions during the deletion operation."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\RentalService.java",
+      "chunk_index": 52,
+      "notes": "The RentalService class relies on a RentalRepository for data access operations. It follows the service layer pattern by encapsulating business logic related to rentals. The addRental method sets default values for certain fields like staffId. The use of Timestamp and LocalDateTime classes indicates handling of date and time data."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\main\\java\\com\\sparta\\engineering72\\sakilaproject\\services\\StaffService.java",
+      "chunk_index": 53,
+      "notes": "The class follows the Service design pattern and uses dependency injection with the StaffRepository."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 54,
+      "notes": "The code uses Mockito for mocking dependencies and JUnit for testing. It follows a standard structure for setting up mock tests in a Spring project."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 55,
+      "notes": "The code uses Mockito for mocking dependencies and setting up test data. It follows a standard unit testing structure with setup, execution, and assertion phases."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 56,
+      "notes": "The code chunk primarily focuses on setting up test scenarios for different film and actor attributes and verifying the expected results. It does not involve complex logic or interactions, making it relatively simple to understand and maintain."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 57,
+      "notes": "The code primarily focuses on testing individual functionalities of film and category objects. It uses mock objects and assertions to verify the expected behavior of the methods being tested."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 58,
+      "notes": "The code primarily focuses on setting object attributes, mocking repository calls, and asserting expected values. The testStaff method appears to be incomplete or irrelevant for the current testing scope."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 59,
+      "notes": "The code chunk demonstrates unit testing for the FilmController and CategoryController classes, ensuring the expected behavior of their methods. It also includes testing the functionality of the Staff class by setting properties and asserting their values. The use of ModelMap for creating test data is notable. The code follows a standard unit testing approach."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 60,
+      "notes": "The code chunk primarily focuses on testing controller methods in a film rental system. It follows a pattern of initializing controllers with required services, calling specific methods, and asserting the results. No complex logic or interactions are present in these test methods."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 61,
+      "notes": "The code uses mockito for mocking repository calls. It involves setting up test scenarios for inventory and rental functionalities in a film rental system."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\MockTests.java",
+      "chunk_index": 62,
+      "notes": "The code uses Mockito's 'when' and 'thenReturn' methods for mocking repository responses in the unit tests. It also utilizes JUnit's 'assertEquals' method for asserting expected values against actual values. The code focuses on testing the correctness of attribute values of rental and category objects based on their IDs."
+    },
+    {
+      "type": "notes",
+      "file": "./repos/SakilaProject\\src\\test\\java\\com\\sparta\\engineering72\\sakilaproject\\SakilaProjectApplicationTests.java",
+      "chunk_index": 63,
+      "notes": "The test cases focus on the MainController class methods and use assertions to validate the expected results. The code structure follows JUnit testing conventions."
+    }
+  ]
+}
